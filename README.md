@@ -7,15 +7,18 @@ This code takes the [PyTorch pre-trained models](http://pytorch.org/docs/master/
 
 Variations of the Resnet family (18, 34, 50, 101, 152), Densenet family (121, 161, 169, 201), inception_v3, VGG16 and VGG19 are included.
 
-# Structure of the Project:
+# Structure of the Code:
 Main code in PyTorch_Amazon.py
    1. Setting of path and model parameters
    1. Splitting data for training and validation
    1. Create dataset_loader, with on-the-fly image augmentation with functions from Image_transformation.py
-   1. Loading the model (imported from PyTorch_models.py) and set optimizer. Here the learning rate for the last classifer is 10 times larger than previous layers
+   1. Loading the model (imported from PyTorch_models.py), setting the learning rate schedule and optimizer. Here the learning rate for the last classifer is 10 times larger than previous layers
    1. Train model and saved the best according to validation set performance.
    1. Generate prediction (for both train and test data) with Test-time augmentation. The former is needed for F2 score threshold optimisation.
-   1. Generate submission
+   1. Generate submission.
+
+# Performance:
+Many Kagglers managed to reach a LB score of over 0.93 on the public leaderboard (see [discussion](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space/discussion/35797)), but mine hovered around 0.925. It turns out that there was a bug in my earlier version - instead of learning more aggressively on the final layer with 10x learning rate, I set the previous layers with the 10x rate.
 
 
 # Reference (with code borrowed or modified from):
