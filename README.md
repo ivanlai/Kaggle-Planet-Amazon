@@ -8,8 +8,15 @@ This code takes the [PyTorch pre-trained models](http://pytorch.org/docs/master/
 Variations of the Resnet family (18, 34, 50, 101, 152), Densenet family (121, 161, 169, 201), inception_v3, VGG16 and VGG19 are included.
 
 # Structure of the Project:
-1. Main code in PyTorch_Amazon.py
-2. test
+Main code in PyTorch_Amazon.py
+   1. Setting of path and model parameters
+   1. Splitting data for training and validation
+   1. Create dataset_loader, with on-the-fly image augmentation with functions from Image_transformation.py
+   1. Loading the model (imported from PyTorch_models.py) and set optimizer. Here the learning rate for the last classifer is 10 times larger than previous layers
+   1. Train model and saved the best according to validation set performance.
+   1. Generate prediction (for both train and test data) with Test-time augmentation. The former is needed for F2 score threshold optimisation.
+   1. Generate submission
+
 
 # Reference (with code borrowed or modified from):
 1. [PyTorch Tutorial on Transfer Learning](http://pytorch.org/tutorials/)
