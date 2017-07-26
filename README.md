@@ -12,7 +12,7 @@ Main code in PyTorch_Amazon.py:
    1. Setting of path and model parameters
    1. Splitting data for training and validation
    1. Create dataset_loader, with on-the-fly image augmentation with functions from Image_transformation.py
-   1. Loading the model (imported from PyTorch_models.py), setting the learning rate schedule and optimizer. Here the learning rate for the last classifer is 10 times larger than previous layers
+   1. Loading the model (imported from PyTorch_models.py), setting the learning rate schedule and optimizer. Here the learning rate for the last classifer is 10 times larger than previous layers. The code should automatically download the pre-trained weights upon first run. If this failed, it can be done manually - just follow the error messages.
    1. Train model and saved the best according to validation set performance.
    1. Generate prediction (for both train and test data) with Test-time augmentation. The former is needed for F2 score threshold optimisation.
    1. Generate submission.
