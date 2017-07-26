@@ -12,8 +12,8 @@ Variations of the Resnet family (18, 34, 50, 101, 152), Densenet family (121, 16
 2. test
 
 # Reference (with code borrowed or modified from):
-1. [PyTorch Tutorial on Transfer Learning].(http://pytorch.org/tutorials/)
-2. Discussions on [PyTorch Forum].(https://discuss.pytorch.org/t/how-to-perform-finetuning-in-pytorch/419/11)
+1. [PyTorch Tutorial on Transfer Learning](http://pytorch.org/tutorials/)
+2. Discussions on [PyTorch Forum](https://discuss.pytorch.org/t/how-to-perform-finetuning-in-pytorch/419/11)
 3. Kaggle Forum on this competition, among others [Mamy Ratsimbazafy](https://www.kaggle.com/mratsim/starting-kit-for-pytorch-deep-learning), [Anokas](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space/discussion/32475), [Peter Giannakopoulos](https://www.kaggle.com/petrosgk/keras-vgg19-0-93028-private-lb)
 
 # Requirement
