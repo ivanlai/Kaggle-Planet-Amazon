@@ -18,7 +18,7 @@ Main code in PyTorch_Amazon.py
    1. Generate submission.
 
 # Performance:
-Many Kagglers managed to reach a LB score of over 0.93 on the public leaderboard (see [discussion](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space/discussion/35797)), but mine hovered around 0.925. It turns out that there was a bug in my earlier version - instead of learning more aggressively on the final layer with 10x learning rate, I set the previous layers with the 10x rate.
+Many Kagglers managed to reach a LB score of over 0.93 on the public leaderboard (see [discussion](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space/discussion/35797)), but mine hovered around 0.925. It turns out that there was a bug in my earlier version - instead of learning more aggressively on the final layer with 10x learning rate, I set the previous layers with the 10x rate. With ensembing I brought it just over the magic 0.93 on the public leader board, but fell just short on the private one.
 
 
 # Reference (with code borrowed or modified from):
