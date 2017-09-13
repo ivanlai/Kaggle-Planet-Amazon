@@ -22,7 +22,7 @@ Many Kagglers managed to reach a LB score of over 0.93 on the public leaderboard
 
 With the latest version I tested it on Densenet121 with 40 epochs, and reached 0.929 on public LB for a single model without Kfold, easily better than any of my single models previousy. With ensemble, this should easily pass the 0.93 mark on both public and private LB.
 
-# Reference (with code borrowed or modified from):
+# Reference:
 1. [PyTorch Tutorial on Transfer Learning](http://pytorch.org/tutorials/)
 2. Discussions on the [PyTorch Forum](https://discuss.pytorch.org/t/how-to-perform-finetuning-in-pytorch/419/11)
 3. Kaggle Forum on this competition. Among others, kernels from [Mamy Ratsimbazafy](https://www.kaggle.com/mratsim/starting-kit-for-pytorch-deep-learning), [Anokas](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space/discussion/32475), [Peter Giannakopoulos](https://www.kaggle.com/petrosgk/keras-vgg19-0-93028-private-lb) and [Heng CherKeng](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space/discussion/33559)
